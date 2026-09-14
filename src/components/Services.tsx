@@ -23,7 +23,7 @@ const SERVICES: ServiceData[] = [
   { num: '08', name: 'Digital Marketing Creatives', desc: 'Performance-ready creative built to support campaigns and funnels.', icon: 'blob' },
 ];
 
-function ServiceRow({ num, name, desc, icon }: ServiceData) {
+function ServiceRow({ name, desc, icon }: ServiceData) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -38,7 +38,6 @@ function ServiceRow({ num, name, desc, icon }: ServiceData) {
         <PlaceholderVisual icon={icon} />
       </div>
       <div className="service-item-inner">
-        <span className="service-num">{num}</span>
         <div>
           <div className="service-name">{name}</div>
           <div className="service-desc">{desc}</div>
